@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Your Name</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 13px 0;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #ffc107 !important;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+        }
+
+        /* Narrower Cards */
+        .card {
+            max-width: 18rem;  /* Set a narrower width */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Adham Alaa El-din</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificates.html">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <br>     <br>
+     <br>
+    <!-- Page Header -->
+    <section class="page-header" style="background: var(--gradient);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 style="color: red;">My Projects</h1>
+                    <p style="color: snow;" class="lead">Explore my portfolio of projects and applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+ <!-- Projects Section -->
+<section class="projects-showcase section-padding">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title" data-aos="fade-up">Project Portfolio</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+
+        <!-- Featured Projects Section -->
+        <section class="projects-section section-padding" id="featured-projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Twilio API SMS Client</h3>
+                                <p>The Twilio SMS Client is a web application that allows users to send real SMS using their
+                                    Twilio API (or other various APIs) accounts. Track message history for the user, while
+                                    Administrators can manage customers and view SMS statistics.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Java Servlets</span>
+                                    <span class="tech-badge">JSP</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/messageapp" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Balance Query via SIP Voice Call</h3>
+                                <p>A telecom service that allows users to query their prepaid balance through a SIP voice
+                                    call using Asterisk and DTMF input. Integrates with a backend REST API to fetch balance
+                                    details and a frontend client to manipulate this data.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Java REST Api</span>
+                                    <span class="tech-badge">Asterisk</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/Balance_Query_Service" class="btn btn-sm btn-outline-primary mt-3">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="col-md-6 mt-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Prepaid Charging Sim for Voice Calls</h3>
+                                <p>A telecom simulation that emulates a real-time prepaid charging system for voice calls through TCP and UDP protocols, with balance deduction and CDR (Call Detail Record) generation. The system is split into two Java Main applications: Mobile and MSC (Mobile Switching Center).</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Java</span>
+                                    <span class="tech-badge">TCP & UDP</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/prepaid_charging_sim" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="col-md-6 mt-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>CryptoCurrency Index & Trading Sim Platform (Crypto-Manager)</h3>
+                                <p>This was my graduation project — a full-stack web platform for real-time cryptocurrency monitoring, ML-based price prediction, and simulated trading. Designed to help users explore crypto trends and safely practice trading strategies.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python Flask</span>
+                                    <span class="tech-badge">Scikit-learn</span>
+                                    <span class="tech-badge">Keras</span>
+                                    <span class="tech-badge">Vue.js</span>
+                                    <span class="tech-badge">MySQL</span>
+                                </div>
+                                <a href="../projects/crypto.html" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Project Card 5 -->
+                    <div class="col-md-6 mt-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Service Guiding & Mediation Module (eTOM)</h3>
+                                <p> Developed a Mediation module following the TM Forum in eTOM framework, implementing core functions of the module : Mediating (correlation ,conversion ,normaliaztion ,validation ,duplication removal) , Guiding and Reporting Service Usage Records.</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">FastAPI</span>
+                                    <span class="tech-badge">SQLAlchemy</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/eTom_Mediation" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 6 -->
+                    <div class="col-md-6 mt-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Bash Query-Based Database Engine</h3>
+                                <p>CLI tool and CSV file–based database engine that accepts SQL-like queries to manage databases and tables (create, drop) and records (insert, select, update, delete). using custom parser for query interpretation and error handling. Utilizing awk and sed commands for data processing</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Bash scripting</span>
+                                    <span class="tech-badge">sed</span>
+                                    <span class="tech-badge">awk</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/Bash_SQL_DB" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                                                            <!-- Project Card 7 -->
+                    <div class="col-md-6 mt-5" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3>Billing and Rating engine & CRM System</h3>
+                                <p>Billing system that interprets CDR files and then rates voice, SMS, and data usage based on defined plans and service packages, applies free units and taxes, generates PDF invoices. Internally, implemented using design patterns to handle rating logic and billing events, and a CRM web interface that manages customers information .</p>
+                                <div class="tech-stack">
+                                    <span class="tech-badge">Java</span>
+                                    <span class="tech-badge">REST API</span>
+                                    <span class="tech-badge">Javascript</span>
+                                    <span class="tech-badge">HTML&CSS</span>
+                                    <span class="tech-badge">PostgresSQL</span>
+                                </div>
+                                <a href="https://github.com/adham-alaa19/Billing_System" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section> <!-- end featured-projects -->
+    </div> <!-- end container -->
+</section> <!-- end projects-showcase -->
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

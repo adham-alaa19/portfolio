@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <style>
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 13px 0;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #ffc107 !important;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+        }
+
+        /* Narrower Cards */
+        .card {
+            max-width: 18rem;  /* Set a narrower width */
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Adham Alaa El-din</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certificates.html">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <br>     <br>
+         <br>
+        <!-- Page Header -->
+        <section class="page-header" style="background: var(--gradient);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 style="color: red;">My Courses</h1>
+                        <p style="color: snow;" class="lead">A collection of courses I've completed to enhance my skillsS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="section-title">Completed Courses</h2>
+                <p class="section-subtitle">Explore the variety of courses I've completed from various platforms</p>
+            </div>
+            <div class="row gy-4">
+                <!-- Red Hat -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://drive.google.com/file/d/1MApmhBKk8j1w8tHad2_CDjz_355DzoSD/view?usp=drive_link" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Hat System Administration I</h5>
+                            <span class="badge bg-danger mb-2">Red Hat</span>
+                            <p class="card-text">Introduction to essential command-line skills and core system administration tasks in Red Hat Enterprise Linux.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: November 2024</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://drive.google.com/file/d/16BUstkG3Mjc2c1VgRMIRYUNJU3IvJTm-/view?usp=drive_link" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Hat System Administration II</h5>
+                            <span class="badge bg-danger mb-2">Red Hat</span>
+                            <p class="card-text">Intermediate administration skills focusing on managing security, storage, processes, and automation.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: March 2025</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://drive.google.com/file/d/1Y2JLYt3vgcGw6_CzGFbjMmR-HzPyG4xE/view?usp=drive_link" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Hat Programming &nbsp &nbsp &nbsp  in Java EE I</h5>
+                            <span class="badge bg-danger mb-2">Red Hat</span>
+                            <p class="card-text">Developing enterprise applications using Java EE with Red Hat technologies.
+
+.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: April 2025</small>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Coursera -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://drive.google.com/file/d/1q4yn6VcSRPb82JgxRwS3hdSWCARs9nfY/view?usp=drive_link" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Redhat training Introduction to python </h5>
+                            <span class="badge bg-danger mb-2">Red Hat</span>
+                            <p class="card-text">Basic Python programming concepts tailored for system administration and scripting.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: May 2025</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://maharatech.gov.eg/course/view.php?id=1600" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">The principles of writing clean code</h5>
+                            <span class="badge" style="background-color: #B8860B;">Maharatech</span>
+                            <p class="card-text">Best practices and coding standards to write clean, maintainable, and readable code.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: February 2025</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://maharatech.gov.eg/course/view.php?id=740" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Database Fundamentals</h5>
+                            <span class="badge" style="background-color: #B8860B;">Maharatech</span>
+                            <p class="card-text">Introduction to relational databases, SQL, normalization, and data modeling principles.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: October 2024</small>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="col-md-6 col-lg-4">
+                    <a href="https://www.udemy.com/course/gsm-gprs-edge-from-a-to-z/" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">GSM,GPRS & EDGE From A to Z</h5>
+                            <span class="badge" style="background-color: #808080;">Udemy</span>
+                            <p class="card-text">Comprehensive guide to 2G and 2.5G mobile communication systems and their architecture.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: January 2025</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.udemy.com/course/ss7-signaling-system-no7/" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Signaling System No.7</h5>
+                            <span class="badge" style="background-color: #808080;">Udemy</span>
+                            <p class="card-text">Overview of SS7 protocols used in telecom networks for signaling and control.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: February 2025</small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.udemy.com/course/completeerlang/" class="card h-100 shadow-sm course-card border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Erlang: The Complete Beginner's Guide</h5>
+                            <span class="badge" style="background-color: #808080;">Udemy</span>
+                            <p class="card-text">Foundations of Erlang programming, focusing on concurrency, fault-tolerance, and distributed systems.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <small class="text-muted">Completed: June 2025</small>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

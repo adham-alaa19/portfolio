@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vimeo Video Player</title>
+  <style>
+        body {
+      background-color: #f5f3e7;
+      color: #4d351e;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .video-div {
+        margin-top: 0%;
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 50vh;
+      padding: .5rem;
+    }
+    .video-wrapper {
+      max-width: 800px;
+      width: 100%;
+      background-color: #fff5e1;
+      border: 2px solid #8c6239;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .back-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.6rem;
+          padding: 0.7rem 1.2rem;
+          width: auto;
+          background-color: #8c6239;
+          color:  #4d351e;
+          border: 1px solid #4d351e;
+          border-radius: 6px;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          margin-left: 1rem;
+          margin-top: 2rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+          transition: all 0.3s ease;
+        }
+      
+        .back-link:hover {
+          background-color: #ffb948;
+          color: black;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+      
+        .back-icon {
+          font-size: 1.2rem;
+          color:  #4d351e;
+          text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+      
+        .back-text {
+          text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+  </style>
+</head>
+<body>
+    <a href="../pages/projects.html" class="back-link">
+        <span class="back-icon">≡</span>
+        <span class="back-text">Back to Projects</span>
+      </a>
+      <div class="video-div">
+  <div class="video-wrapper">
+    <div id="videoContainer" style="padding:56.25% 0 0 0;position:relative;">
+     </div>
+  </div>
+</div >
+
+
+  <script>
+     const whitelist = {
+     'astrsk_101'       : "https://player.vimeo.com/video/84465604?h=cf70968086",
+      'astrsk_102': 'https://player.vimeo.com/video/88847619?badge=0&autopause=0&player_id=0&app_id=58479'
+     };
+
+    // Function to extract video ID from URL
+    function getVideoID() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const videoUrl = urlParams.get('id');
+      return videoUrl;
+    }
+
+    const videoId = getVideoID();
+    const videoContainer = document.getElementById('videoContainer');
+
+     if (videoId && whitelist[videoId]) {
+      const iframe = document.createElement('iframe');
+      iframe.src = whitelist[videoId];
+      iframe.frameborder = "0";
+      iframe.allow = "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media";
+      iframe.style.position = "absolute";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.title = "Vimeo Video Player";
+      
+      videoContainer.appendChild(iframe);
+    } else {
+      document.body.innerHTML = '<h2 style="color: darkred">Invalid or Unauthorized Video</h2>';
+    }
+  </script>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>

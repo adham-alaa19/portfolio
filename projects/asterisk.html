@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform | My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/favicon.ico">
+
+    <style>
+        .back-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.6rem;
+          padding: 0.7rem 1.2rem;
+          width: auto;
+          background-color: #8c6239;
+          color:  #4d351e;
+          border: 1px solid #4d351e;
+          border-radius: 6px;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          margin-left: 1rem;
+          margin-top: 2rem;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.1);
+          transition: all 0.3s ease;
+        }
+      
+        .back-link:hover {
+          background-color: #ffb948;
+          color: black;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+      
+        .back-icon {
+          font-size: 1.2rem;
+          color:  #4d351e;
+          text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+      
+        .back-text {
+          text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+      </style>
+
+      
+</head>
+<body>
+          
+    <a href="../pages/projects.html" class="back-link">
+        <span class="back-icon">≡</span>
+        <span class="back-text">Back to Projects</span>
+      </a>
+
+
+    <!-- Project Header -->
+    <header class="project-header">
+        <div class="container">
+            <h1 class="text-center">E-Commerce Platform</h1>
+            <p class="text-center">A full-stack e-commerce solution with modern features</p>
+        </div>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="project-showcase">
+                        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="C:\Users\theda\Pictures\screenshots\Screenshot (1).png" class="d-block w-100" alt="E-Commerce Dashboard">
+                                    <div class="carousel-caption">
+                                        <h5>Admin Dashboard</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="C:\Users\theda\Pictures\screenshots\Screenshot (76).png" class="d-block w-100" alt="Product Listing">
+                                    <div class="carousel-caption">
+                                        <h5>Product Catalog</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="C:\Users\theda\Pictures\screenshots\Screenshot (79).png" class="d-block w-100" alt="Shopping Cart">
+                                    <div class="carousel-caption">
+                                        <h5>Shopping Cart</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-description mt-5">
+                        <h2>Project Overview</h2>
+                        <p>This full-stack e-commerce platform was built to provide a seamless online shopping experience with modern features and robust architecture. The platform includes user authentication, product catalog management, shopping cart functionality, payment processing, and order management.</p>
+                        
+                        <div class="project-tech-card mt-4">
+                            <h3>Technologies Used</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Stripe API</span>
+                            </div>
+                        </div>
+                        <h2 class="mt-4">Key Features</h2>
+                        <ul>
+                            <li>Responsive design for optimal viewing on all devices</li>
+                            <li>User authentication and profile management</li>
+                            <li>Product catalog with categories, filtering, and search functionality</li>
+                            <li>Shopping cart with real-time updates</li>
+                            <li>Secure payment processing integration</li>
+                            <li>Order management and tracking</li>
+                            <li>Admin dashboard for inventory and user management</li>
+                            <li>Analytics and reporting tools</li>
+                        </ul>
+                        
+                        <h2 class="mt-4">Development Process</h2>
+                        <p>The development process followed an Agile methodology, with regular sprints and stakeholder reviews. The project began with extensive market research and user needs analysis, followed by wireframing and prototyping. The development phase was split into front-end and back-end tasks, with continuous integration and testing throughout.</p>
+                      
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="project-sidebar">
+                        <div class="project-info-card">
+                            <h3>Project Details</h3>
+                            <ul class="project-info-list">
+                                <li><span class="info-label">Client:</span> XYZ Retail</li>
+                                <li><span class="info-label">Timeline:</span> January 2023 - June 2023</li>
+                                <li><span class="info-label">Role:</span> Lead Developer</li>
+                                <li><span class="info-label">Team Size:</span> 5 members</li>
+                            </ul>
+                        </div>
+                        
+
+                        
+                        <div class="project-links-card mt-4">
+                            <h3>Links</h3>
+                            <div class="project-links">
+                                <form method="get" action="videoplayer.html">
+                                    <input type="hidden" name="id" value="astrsk_101" id="astrsk_101">
+                                <input type="submit"  class="btn btn-primary w-100 mb-2" value="Live Demo">
+                            </form>
+                                <a href="#" class="btn btn-outline-primary w-100 mb-2">GitHub Repository</a>
+                                <a href="#" class="btn btn-outline-primary w-100">Documentations</a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-navigation-card mt-4">
+                            <h3>Other Projects</h3>
+                            <div class="project-navigation">
+                                <a href="project2.html" class="next-project">
+                                    <div class="project-nav-info">
+                                        <span class="nav-label">Next Project</span>
+                                        <span class="nav-title">Task Management App</span>
+                                    </div>
+                                    <div class="project-nav-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2025 Adham. All rights reserved.</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
+</body>
+</html>

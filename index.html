@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adham- Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar will be loaded here -->
+    <div id="navbar-container">
+        <!-- Inline navbar as fallback -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Adham Alaa El-din</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/certificates.html">Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/skills.html">Skills</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="profile-image-container">
+                        <img src="assets/imgs/profile-pic.jpg" alt="Your Name" class="profile-image">
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-text">
+                        <h1>Hello, I'm <span class="highlight">Adham</span></h1>
+                        <h2>Software Developer & Tech Enthusiast</h2>
+                        <p class="lead">I enjoy coding, problem solving, and finding creative solutions. I focus on
+                            writing clean and efficient code to turn ideas into real, working solutions.</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/adham-alaa19/" target="_blank" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/adham-e-1a810a1b6/" target="_blank"
+                                class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:adham.alaadin.gmail@gmail.com" class="social-icon"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="pages/history.html" class="btn btn-primary me-3">My Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Who I Am</h3>
+                    <p>I'm a passionate software developer with a strong foundation in computer science and a love for
+                        solving problems through clean, efficient code. I graduated with honors from Cairo University
+                        with an excellent degree, ranking 2nd in my class.</p>
+                    <p>I attended the Telecom track at the Information and Technology Institute (ITI), the 9-month
+                        professional training program. I'm deeply intrigued by the telecom industry and excited to gain
+                        hands-on experience and grow within this field.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects-section section-padding" id="featured-projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row mt-12">
+                <!-- Project Card 1 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Twilio API SMS Client</h3>
+                            <p>The Twilio SMS Client is a web application that allows users to send real SMS using their
+                                Twilio API (or other various APIs) accounts. track message history for the user, while
+                                Administrators can manage customers and view SMS statistics</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Java Servlets</span>
+                                <span class="tech-badge">JSP</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/adham-alaa19/messageapp" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Balance Query via SIP Voice Call</h3>
+                            <p>A telecom service that allows users to query their prepaid balance through a SIP voice
+                                call using Asterisk and DTMF input. Integrates with a backend REST API to fetch balance
+                                details data dynamically and a front end client to manipulate this data</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Java REST Api</span>
+                                <span class="tech-badge">Asterisk</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/sohailaelgohary1/BalanceQueryService" class="btn btn-sm btn-outline-primary mt-3">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-12">
+                <br>
+            <!-- Project Card 3 -->
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Prepaid Charging Sim for Voice Calls</h3>
+                        <p>A telecom simulation that emulates a real-time prepaid charging system for voice calls through TCP and UDP Protocols, with balance deduction and CDR (Call Detail Record) generation. The system is split into two Java Main applications: Mobile and MSC (Mobile Switching Center).</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">TCP&UDP</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/adham-alaa19/prepaid_charging_sim" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>CryptoCurrency Index & Trading Sim Platform (Crypto-Manager)</h3>
+                        <p>This was my graduation project a full-stack web platform for real-time cryptocurrency monitoring, ML-based price prediction, and simulated trading. Designed to help users explore crypto trends and safely practice trading strategies.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python Flask</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Keras</span>
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <a href="projects/crypto.html" class="btn btn-sm btn-outline-primary mt-3">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--        End of projects               -->
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="pages/projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links-section section-padding" id="quick-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title" data-aos="fade-up">Explore My Work</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quick-link-card">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>My Journey</h3>
+                        <p>Explore my academic and professional timeline.</p>
+                        <a href="pages/history.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quick-link-card">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Courses</h3>
+                        <p>View the courses I've completed to enhance my skills.</p>
+                        <a href="pages/courses.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="quick-link-card">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certificates</h3>
+                        <p>Browse my professional certifications and achievements.</p>
+                        <a href="pages/certificates.html" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quick-link-card">
+                        <div class="quick-link-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Skills</h3>
+                        <p>Check out the skills I've gained throughout life.</p>
+                        <a href="pages/skills.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Adham. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#home" class="back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS for scroll animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+
+</html>

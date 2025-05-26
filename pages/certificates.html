@@ -1,0 +1,175 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Certificates - Adham Alaa El-din</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <style>
+
+    .certificate-card {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      height: 28rem; /* Fixed height for better card dimension */
+      border: 8px solid;
+      border-image: linear-gradient(45deg, rgba(153, 101, 21, 1), rgba(255, 185, 72, 1));
+      border-image-slice: 1;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .certificate-thumb {
+      width: 96%;
+      height: 12rem;  /* Fixed height for the image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      padding-left: 15px;
+      padding-top: 5px;
+    }
+
+    .certificate-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
+
+    .certificate-info {
+      padding: 2rem; /* Spacing below the image */
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .certificate-info h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .certificate-info p {
+      font-size: 1rem;
+      margin: 4px 0;
+    }
+
+    .view-btn {
+      align-self: flex-start;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .certificate-card {
+        height: auto;  /* Card height auto on smaller screens */
+      }
+
+      .certificate-thumb {
+        height: 8rem;  /* Smaller image for mobile */
+      }
+
+      .certificate-info {
+        padding: 1rem;  /* Less padding for smaller screens */
+      }
+      
+    }
+
+    
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: #ffc107 !important;
+        }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Adham Alaa El-din</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+
+  <!-- Header -->
+  <section class="page-header" style="background: var(--gradient);">
+    <div class="container text-center">
+      <h1 style="color: red;">My Certificates</h1>
+      <p style="color: snow;" class="lead">Explore the certificates I have earned throughout my journey</p>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section class="certificates-showcase section-padding">
+    <div class="container">
+      <div class="row mb-5 text-center">
+        <h2 class="section-title" data-aos="fade-up">Certificates Gallery</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-5">
+        <!-- Certificate 1 -->
+        <div class="col-12 col-md-6" data-aos="fade-up">
+          <div class="certificate-card">
+            <div class="certificate-thumb">
+              <img src="../assets/imgs/Mock.jpg" alt="ISTQB Certificate" />
+            </div>
+            <div class="certificate-info">
+              <div>
+                <h4>ISTQB Certified Tester - Foundation Leve</h4>
+                <p><strong>Issued by:</strong> ISTQB</p>
+                <p><strong>Date:</strong> October 2, 2021</p>
+                <p><strong>Expires:</strong> Never</p>
+              </div>
+              <a href="http://scr.istqb.org/" target="_blank" class="btn btn-primary view-btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards below -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
